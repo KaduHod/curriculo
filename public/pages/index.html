@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title></title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="css/style.css" rel="stylesheet">
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+		<script src="public/js/htmx.min.js"></script>
+		<style>
+			body{
+				background-color: rgb(69 10 10);
+				background-color: rgb(2 44 34);
+			}
+			a, p, h1, li, h2, h3, .nav-link {
+				color: white;
+			}
+			.container-flex-space{
+				display:flex;
+				justify-content: space-around;
+			}
+			.debug{
+				border: 1px red transparent
+			}
+			.image{
+				max-width: 200px;
+				max-heigth: 200px;
+			}
+			.image-2{
+				max-width: 350px;
+				max-heigth: 350px;
+			}
+			.image-3{
+				max-width: 100px;
+				max-heigth: 100px;
+				margin: 10px;
+			}
+			.image-4{
+				max-width: 50px;
+				max-heigth: 50px;
+				margin: 10px;
+			}
+			.meu-container{
+				display: flex;
+				justify-content: space-around;
+				margin: 40px 0px
+			}
+			.container-conteudo{
+				margin-left: 25px;
+			}
+			.text-centered {
+				display:flex;
+				justify-content:center;
+				align-items:center;
+			}
+			.espaço-bottom{
+				margin-bottom:130px;
+			}
+		</style>
+	</head>
+	<body>
+		<header class="container">
+			<ul class="nav">
+				<li class="nav-item">
+					<a class="nav-link active" aria-current="page" href="#">Minhas experiências</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Sobre mim</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Contato</a>
+				</li>
+			</ul>
+		</header>
+		<div class="espaço-bottom container debug">
+			<div class="container-image text-centered">
+				<img class="image " style="border-radius:100px" src="public/images/eu2.jpeg" alt="">
+			</div>
+			<div class="container-conteudo">
+				<h1 style="text-align:center;" class="text-centered">Olá, bem vindo a minha pagina pessoal!</h1>
+				<p id="apresentacao">Sou um desenvolvedor de software com aproximadamente anos_inicio_programacao anos de experiência em aplicativos web. Atualmente curso Analise e Desenvolvimento de Sistamas e trabalho principalmente com Node, JavaScript e PHP, mas também estudo C e Go sendo essa a minha linguagem foco hoje em dia.
+				Estou sempre pronto para aprender e enfrentar novos desafios.</p>
+
+			</div>
+
+		</div>
+		<div class="espaço-bottom container debug">
+			<h2 class="text-centered">Minha experiência profissional</h2>
+			<div class="container debug meu-container">
+				<div class="container-image">
+					<img class="image-2 rounded-2" src="public/images/hqs.png" alt="">
+				</div>
+				<div class="container-conteudo">
+					<h3>HQS Soluções em TI</h3>
+					<p>Participei da manutenção de um sistema para captação de imóveis em todo o Brasil. Por meio desse sistema, auxiliei na realização de manutenções no produto principal e na coordenação da busca por novas propriedades em diferentes regiões. A ferramenta oferece uma interface intuitiva para gerenciar informações como localização, características, preço e disponibilidade dos imóveis. Além disso, automatiza a busca em várias fontes de dados, sendo personalizável por critérios como tipo de imóvel, faixa de preço e localização. Também conta com recursos de análise e relatórios para avaliar o desempenho das estratégias de captação e identificar tendências de mercado.</p>
+				</div>
+			</div>
+			<div class="container debug meu-container">
+				<div class="container-image">
+					<img class="image-2 rounded-2" src="public/images/aprova-concursos.png" alt="">
+				</div>
+				<div class="container-conteudo">
+					<h3>IESDE</h3>
+					<p>Durante minha experiência, trabalhei na manutenção de uma plataforma de Ensino a Distância (EAD) para ensino superior e cursos preparatórios para concursos. Além disso, participei do desenvolvimento de um sistema para facilitar a venda desse serviço a instituições de ensino interessadas.
+
+A plataforma EAD oferece ferramentas para gerenciamento de conteúdo, interação entre alunos e instrutores, e acompanhamento do progresso dos estudantes. Na manutenção, foquei em melhorias, correção de bugs e garantia da estabilidade e segurança da plataforma.</p>
+				</div>
+			</div>
+			<div class="container debug meu-container">
+				<div class="container-image">
+					<img class="image-2 rounded-2" src="public/images/nexcore.png" alt="">
+				</div>
+				<div class="container-conteudo">
+					<h3>Nexcore by Selbetti</h3>
+					<p>Sistema Omnichannel, Telefonia, Chat e Integrações:
+
+Atualmente, atuo como desenvolvedor de integrações neste sistema, que representa minha oportunidade de trabalho atual. Minha responsabilidade principal é realizar integrações entre este sistema e sistemas terceiros, como CRMs, ERPs, entre outros. Dentre esses sistemas, destacam-se alguns bem conhecidos, como Salesforce, TOTVS e Movidesk.</p>
+				</div>
+			</div>
+		</div>
+		<div class="espaço-bottom container debug">
+			<h2 class="text-centered">Skills</h2>
+			<p class="text-centered">Linguagens e ferramentas que utilizo no meu dia a dia</p>
+			<div class="text-centered skills-images" style="display:flex;flex-direction:column;padding-top:20px;">
+				<div class="container-flex-space">
+					<img class="image-3" src="public/images/nodejs.svg" alt="">
+					<img class="image-3" src="public/images/php.svg" alt="">
+					<img class="image-3" src="public/images/go.svg" alt="">
+				</div>
+				<div class="container-flex-space">
+					<img class="image-3" src="public/images/linux.svg" alt="">
+					<img class="image-3" src="public/images/neovim.svg" alt="">
+				</div>
+			</div>
+		</div>
+		<div class="espaço-bottom container debug">
+			<h2 class="text-centered">Sobre mim</h2>
+			<p class="text-centered">Iniciei minha carreira com Node.js, e ao longo do tempo, meu interesse por técnicas mais avançadas, como a construção de servidores sem o uso de bibliotecas, manipulação de fluxo de stream dados e paralelismo, só cresceu. Com esse estudo, surgiu o desejo de compreender melhor o funcionamento das linguagens de baixo nível.</p>
+			<p>Minha primeira incursão nesse universo foi com Golang. Lembro-me dos primeiros desafios com ponteiros, que foram uma verdadeira montanha-russa emocional. Com o passar do tempo, mergulhei no estudo de C, até sentir-me motivado a construir um servidor web na linguagem. Foi um grande desafio, dado que o processamento de dados em C é notoriamente mais complexo se comparado a linguagens como Node.js e Go(lang). Para concluir o projeto, precisei desenvolver estruturas de dados fundamentais, como filas e árvores.</p>
+			<p>Atualmente, meu interesse se volta para conteúdos de nível mais baixo. Estou dedicando-me a um curso de algoritmos e estruturas de dados oferecido pela The Primegean, utilizando Java como linguagem principal. Este mergulho mais profundo nas estruturas e algoritmos essenciais está me proporcionando uma compreensão mais abrangente do funcionamento interno das linguagens de programação e de suas capacidades.</p>
+		</div>
+		<div style="flex-direction:column;" class="container text-centered debug">
+			<h2 class="text-centered">Gostou do conteúdo? Me contate!</h2>
+			<img class="image-4" src="public/images/linkedin.svg" alt="">
+		</div>
+	</body>
+	<script src="/public/js/main.js"></script>
+</html>
